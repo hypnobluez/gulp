@@ -1,4 +1,33 @@
-$bg-color: teal;
+@import 'node_modules/bootstrap/scss/_functions.scss';
+@import 'node_modules/bootstrap/scss/_variables.scss';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 550px,
+  // Medium screen / tablet
+  md: 750px,
+  // Large screen / desktop
+  lg: 950px,
+  // Extra large screen / wide desktop
+  xl: 1150px
+);
+
+$bg-xs: orange;
+$bg-sm: purple;
+$bg-md: blue;
+$bg-lg: black;
+$bg-xl: green;
 body {
-    background: $bg-color;
+    @include media-breakpoint-only(xs) {
+        background: $bg-xs;
+
+    }
+    
+    @include media-breakpoint-up(sm) {background: $bg-sm}
+    @include media-breakpoint-up(md) {background:  $bg-md }
+    @include media-breakpoint-up(lg) { background: $bg-lg}
+    @include media-breakpoint-up(xl) { background: $bg-xl }
 }

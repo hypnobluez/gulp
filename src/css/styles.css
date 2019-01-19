@@ -1,2 +1,19 @@
-body {
-  background: teal; }
+@media (max-width: 549.98px) {
+  body {
+    background: orange; } }
+
+@media (min-width: 550px) {
+  body {
+    background: purple; } }
+
+@media (min-width: 750px) {
+  body {
+    background: blue; } }
+
+@media (min-width: 950px) {
+  body {
+    background: black; } }
+
+@media (min-width: 1150px) {
+  body {
+    background: green; } }
