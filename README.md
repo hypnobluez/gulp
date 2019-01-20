@@ -1,1 +1,2 @@
-##Bootstrap 4 and gulp 4
+## to run gulp
+## npm start or npm run dev or gulp
